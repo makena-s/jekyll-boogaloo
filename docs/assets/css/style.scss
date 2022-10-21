@@ -1,0 +1,9 @@
+---
+---
+// custom css according to GITHUB TUTORIAL https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll#customizing-your-themes-css
+
+@import "{{ site.theme }}";
+// custom css or sass (including imports) below
+body {
+  background-color: green;
+}

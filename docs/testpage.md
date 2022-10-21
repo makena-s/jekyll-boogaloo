@@ -20,7 +20,9 @@ markdown info
 
 >> blockquote
 
-[link](https://www.youtube.com/watch?v=kY27wmTZwyg)
+direct link [link](https://www.youtube.com/watch?v=kY27wmTZwyg)
+
+automatic link <https://www.youtube.com/watch?v=kY27wmTZwyg>
 
 <email@example.com>
 

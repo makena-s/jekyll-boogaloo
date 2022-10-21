@@ -3,14 +3,23 @@ JEKYLL BOOGALOO NOTES
 SETUP
 - bundle add webrick before testing site locally (bundle exec jekyll serve)
 - http://localhost:4000/jekyll-boogaloo/
-- created page with github instructions rather than jekyll https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll
+- following github instructions (rather than jekyll) https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll
 
 JEKYLL
+- markdown guide https://itsfoss.com/markdown-guide/
 - jekyll content: pages (standalone) and posts (for blog)
-- for variables and metadata (ex: title, layout) add YAML front matter to any markdown or html file
-- categories info https://blog.webjeda.com/jekyll-categories/
 - post filenames must be YYY-MM-DD-NAME.md
+- for variables and metadata (ex: title, layout), add YAML front matter to any markdown or html file
+- categories info https://blog.webjeda.com/jekyll-categories/
+
+THEME
+- adding theme https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
+- minima theme customization https://github.com/jekyll/minima#customizing-templates
 
 PROBLEMS
-- headers display properly in github edit, but on webpage header 1 is too small
-- categories show up in post url, not sure if they're supposed to
+- headers render properly in github edit, but on webpage header 1 is too small
+- categories show up in post url, not sure whether they're supposed to
+
+DATA DIRECTORY
+- site title and description: _config.yml
+-

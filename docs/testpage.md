@@ -1,14 +1,14 @@
+---
 layout: page
 title: "testpage"
 permalink: /testpage
+---
 
 testpage content
 
---- 
-
 markdown info
 
-# level 1 heading
+# level 1 heading?
 ## level 2 heading
 ### level 3 heading
 
@@ -17,6 +17,8 @@ markdown info
 **bold**
 
 > blockquote
+
+>> blockquote
 
 [link](https://www.youtube.com/watch?v=kY27wmTZwyg)
 
@@ -32,11 +34,16 @@ markdown info
 - item
 - item
 
--item
+---
+
+- item
   1. item
   2. item
--item
+- item
 
 `code`
 
-```code block```
+```
+code block
+lots of code
+```

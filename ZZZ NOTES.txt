@@ -1,12 +1,15 @@
 JEKYLL BOOGALOO NOTES
 
 SETUP
-- bundle add webrick before testing site locally (bundle exec jekyll serve)
-- http://localhost:4000/jekyll-boogaloo/
+- bundle exec jekyll serve http://localhost:4000/jekyll-boogaloo/
+- bundle add webrick before testing site locally
 - following github instructions (rather than jekyll) https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll
 
 JEKYLL
 - markdown guide https://itsfoss.com/markdown-guide/
+- html tags in markdown is encouraged https://daringfireball.net/projects/markdown/syntax#html
+  - inline can be used anywhere
+  - block-level elements (ex: div, table, p) must be at root level and surrounded by a blank line on top and bottom
 - jekyll content: pages (standalone) and posts (for blog)
 - post filenames must be YYY-MM-DD-NAME.md
 - for variables and metadata (ex: title, layout), add YAML front matter to any markdown or html file
@@ -15,11 +18,34 @@ JEKYLL
 THEME
 - adding theme https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
 - minima theme customization https://github.com/jekyll/minima#customizing-templates
+- minima path C:\Ruby31-x64\lib\ruby\gems\3.1.0\gems\minima-2.5.1
+- ^ override any theme file by copying it into your site directory, now jekyll will use your file instead of the original
+- overriding theme defaults https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+- to modify stylesheets, copy main sass file (_sass/minima.scss) into your directory's sass
+- editing _sass/minima/_base.scss works for bgcolor etc
 
 PROBLEMS
 - headers render properly in github edit, but on webpage header 1 is too small
 - categories show up in post url, not sure whether they're supposed to
+- categories seem nested in the directory, not sure if it's supposed to be
+- editing assets/css/style.scss as advised by github doesn't work
 
 DATA DIRECTORY
 - site title and description: _config.yml
--
+- background color: _base.scss under body
+
+EXTRA COMMENTARY
+- my previous knowledge of jekyll workings is super helpful for this second (and different) attempt
+- starting with a nice build and tweaking things rather than making each file from scratch
+- just realized my previous jekyll tutorial has no notes doc because all notes were in-file....
+- TO DO
+  - remake site with only pages, no posts, to cut out a chunk of confusion
+  - maybe follow jekyll tutorial again to make from scratch? i'll be using a my own theme anyways
+  - so basically my site will use markdown/html and custom css
+  - plan purpose/requirements first, then add features
+SITE PLANNING
+  - priorities: simplicity, convenient navigation, epic drawn elements and animations
+  - click images to enlarge?
+  - index: landing page with main menu
+  - topic menus: school projects, mobile projects, twine, js scraps, coding resources, html/css/js showcase
+    - sort projects by class/type of code? p3, p5js, etc. with short explanations of each
